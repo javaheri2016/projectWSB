@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php
+
+// If your page calls session_start() be sure to include jcart.php first
+include_once('jcart/jcart.php');
+
+?>
 	<title>Pear - sklep dla wymagających</title>
 	<meta charset="UTF-8">
-	<meta name="author" content="Sandra Ilczuk sandra_i@poczta.onet.pl">
+	<meta name="author" content="Sandra Ilczuk sandra_i@poczta.onet.pl Katarzyna Javaheri-Szpak katarzyna.javaheri@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link href="fontello/css/fontello.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cormorant+Upright|Lobster|Open+Sans+Condensed:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    	<script src="js/countdown.js" type="text/javascript"></script>
 		<!--[if lt IE 9]>
 		<script src="http://oss.maxcdn.com/libs/5shiv/3.7.0/html5shiv.js"></script>
 		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 </head>
-<body>	
+<body>
 	<div class="container-fluid">    
         <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -53,7 +60,8 @@
 </nav>
     </div>         
 	<!--slider-->
-			<div class="col-xs-12">
+	<div class="container-fluid">
+		<div class="row">
 			<div id="slajder" class="carousel slide" data-ride="carousel">
     		<!-- Indicators -->
    				<ol class="carousel-indicators">
@@ -66,188 +74,245 @@
     					<!-- Wrapper for slides -->
  				<div class="carousel-inner" role="listbox">
    					<div class="item active">
-   						<img src="grafika/s1.jpg" alt="slider" class="center-block img-responsive">
-   						<figacaption class="carousel-caption" id="stext">
-   						<h1>promocja</h1>
-   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+   						<img src="grafika/s5.jpg" alt="computer" class="center-block img-responsive">
+   						<figacaption class="carousel-caption" id="promo">
+   						<h1>wielka promocja już za:</h1>
+   						<p id="timer"></p><p><i class="icon-connectdevelop" style="font-size: 1.5em; opacity:1; font-weight: bold;"></i></p>
    						</figacaption>
    					</div>
 
     				 <div class="item">
-    					<img src="grafika/s2.jpg" alt="slider" class="center-block img-responsive">
-    					<figacaption class="carousel-caption" id="stext">
-    					<h1>sed do eiusmod</h1>
-   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    					<img src="grafika/s2.jpg" alt="computer" class="center-block img-responsive">
+    					<figacaption class="carousel-caption">
+    					<h1>design</h1>
+   						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h3>
+   						<button class="btn-link"><a href="#"><h4>więcej</h4></a></button>
    						</figacaption>
 
     				</div>
     
 					<div class="item">
-   						<img src="grafika/s3.jpg" alt="slider" class="center-block img-responsive">
-   						<figacaption class="carousel-caption" id="stext">
-   						<h1>Lorem ipsum dolor sit amet</h1>
-   						<p>consectetur adipisicing elit, sed do eiusmod</p>
+   						<img src="grafika/s3.jpg" alt="computer" class="center-block img-responsive">
+   						<figacaption class="carousel-caption">
+   						<h1>Pear dla biznesu</h1>
+   						<h3>consectetur adipisicing elit, sed do eiusmod</h3>
+   						<button class="btn-link"><a href="#"><h4>więcej</h4></a></button>
    						</figacaption>
 
    					</div>
 
    					<div class="item">
-    					<img src="grafika/s4.jpg" alt="slider" class="center-block img-responsive">
-    					<figacaption class="carousel-caption" id="stext"> 
-    					<h1>sed do eiusmod</h1>
-   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    					<img src="grafika/s4.jpg" alt="computer" class="center-block img-responsive">
+    					<figacaption class="carousel-caption"> 
+    					<h1>jedna marka wiele możliwości</h1>
+   						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h3>
+   						<button class="btn-link"><a href="#"><h4>więcej</h4></a></button>
    						</figacaption>
 
     				</div>
 
     				<div class="item">
-    					<img src="grafika/s5.jpg" alt="slider" class="center-block img-responsive">
-                        
-    					<figacaption class="carousel-caption" id="stext">
-                         <span class="logo">   <i class="icon-connectdevelop"></i></span>
-    					<h1>Lorem ipsum dolor sit amet</h1>
-   						<p>consectetur adipisicing elit, sed do eiusmod</p>
+    					<img src="grafika/s1.jpg" alt="computer" class="center-block img-responsive">
+    					<figacaption class="carousel-caption">
+    					<h1>elegancja</h1>
+   						<h3>consectetur adipisicing elit, sed do eiusmod</h3>
+   						<button class="btn-link"><a href="#"><h4>więcej</h4></a></button>
    						</figacaption>
 
     				</div>
 				</div>
 				<!-- Left and right controls -->
-    <a class="left carousel-control" href="#slajder" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#slajder" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-				</div>
+    			<a class="left carousel-control" href="#slajder" role="button" data-slide="prev">
+    				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     				<span class="sr-only">Previous</span>
+    			</a>
+   				<a class="right carousel-control" href="#slajder" role="button" data-slide="next">
+     				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      				<span class="sr-only">Next</span>
+    			</a>
 			</div>
-		
+		</div>
+	</div>
+
 	<!--menu boczne i zawartość strony-->
     <div class="container-fluid">
-		<div class="row" id="all">
-			<div class="col-xs-12 col-lg-3" id="nav">
+		<div class="row">
+	<!-- menu > 1024px -->
+			<div class="col-lg-3" id="nav">
 				<div class="panel-group" id="menu_harmonijka">
 					<div class="panel panel-default" id="panel-heading">
 						<div class="panel-heading" id="panel-heading">
 						<h4 class="panel-title" id="panel-title">
-							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu1" aria-expanded="true" aria-controls="menu1">komputer</a>
+							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu1" aria-expanded="true" aria-controls="menu1">Mac</a>
 						</h4>
 						</div>
 							<div class="panel-collapse collapse" id="menu1">
 								<ul class="list-group">
-									<li class="list-group-item" id="list-group-item"><a href="#">jeden typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">inny typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">jeszcze inny typ</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">MacBook</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">MacBook Air</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">MacBook Pro</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iMac</a></li>
 								</ul>
 							</div>
 					</div>
 					<div class="panel panel-default" id="panel-heading">
 						<div class="panel-heading" id="panel-heading">
 						<h4 class="panel-title" id="panel-title">
-							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu2" aria-expanded="true" aria-controls="menu2">laptop</a>
+							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu2" aria-expanded="true" aria-controls="menu2">iPad</a>
 						</h4>
 						</div>
 							<div class="panel-collapse collapse" id="menu2">
 								<ul class="list-group">
-									<li class="list-group-item" id="list-group-item"><a href="#">jeden typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">inny typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">jeszcze inny typ</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPad Pro</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPad Air 2</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPad mini 4</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPad mini 2</a></li>
 								</ul>
 							</div>
 					</div>
 					<div class="panel panel-default" id="panel-heading">
 						<div class="panel-heading" id="panel-heading">
 						<h4 class="panel-title" id="panel-title">
-							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu3" aria-expanded="true" aria-controls="menu2">telefon</a>
+							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu3" aria-expanded="true" aria-controls="menu2">iPhone</a>
 						</h4>
 						</div>
 							<div class="panel-collapse collapse" id="menu3">
 								<ul class="list-group">
-									<li class="list-group-item" id="list-group-item"><a href="#">jeden typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">inny typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">jeszcze inny typ</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPhone 7</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPhone 6</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">iPhone SE</a></li>
 								</ul>
 							</div>
 					</div>
 					<div class="panel panel-default" id="panel-heading">
 						<div class="panel-heading" id="panel-heading">
 						<h4 class="panel-title" id="panel-title">
-							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu4" aria-expanded="true" aria-controls="menu2">tablet</a>
+							<a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu4" aria-expanded="true" aria-controls="menu2">Watch</a>
 						</h4>
 						</div>
 							<div class="panel-collapse collapse" id="menu4">
 								<ul class="list-group">
-									<li class="list-group-item" id="list-group-item"><a href="#">jeden typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">inny typ</a></li>
-									<li class="list-group-item" id="list-group-item"><a href="#">jeszcze inny typ</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">Apple Watch Series 2</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">Apple Watch Nike+</a></li>
+									<li class="list-group-item" id="list-group-item"><a href="#">Apple Watch Edition</a></li>
 								</ul>
 							</div>
 					</div>
 				</div>
 			</div>
+		<!--koniec menu > 1024px -->
+		<!--menu < 1024px -->
+		<div id="nav-mini">
+		<div class="dropdown" id="dropdown">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
+				Mac
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">MacBook</a></li>
+				<li><a href="#">MacBook Air</a></li>
+				<li><a href="#">MacBook Pro</a></li>
+				<li><a href="#">iMac</a></li>
+			</ul>
+		</div>
+		<div class="dropdown" id="dropdown">	
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
+				iPad
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">iPad Pro</a></li>
+				<li><a href="#">iPad Air 2</a></li>
+				<li><a href="#">iPad Air 4</a></li>
+				<li><a href="#">iPad mini 2s</a></li>
+			</ul>
+		</div>
+		<div class="dropdown" id="dropdown">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
+				iPhone
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">iPhone 7</a></li>
+				<li><a href="#">iPhone 6</a></li>
+				<li><a href="#">iPhone SE</a></li>
+			</ul>
+		</div>
+		<div class="dropdown" id="dropdown">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
+				Watch
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Apple Watch Series 2 </a></li>
+				<li><a href="#">Apple Watch Nike +</a></li>
+				<li><a href="#">Applw Watch Edition</a></li>
+			</ul>
+		</div>	
+		</div>
+
+
+		<!-- koniec menu < 1024px -->
 			<div class="col-xs-12 col-lg-9" id="content">
 				<div class="row">
-					<div class="col-xs-12 col-md-4" id="box">
-						<div id="item">
+					<div class="col-xs-6 col-md-4" id="box">
+						<div id="item1">
 							<img src="grafika/item.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-				<div class="col-xs-12 col-md-4" id="box">
-						<div id="item">
+					<div class="col-xs-6 col-md-4" id="box">
+							<div id="item">
 							<img src="grafika/tablet_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-					<div class="col-xs-12 col-md-4" id="box">
+					<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/monitor_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-				</div>
-				<div class="row">
-			<div class="col-xs-12 col-md-4" id="box">
+				
+					<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/monitor_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-					<div class="col-xs-12 col-md-4" id="box">
+					<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/item.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-				<div class="col-xs-12 col-md-4" id="box">
+				<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/tablet_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-		<div class="col-xs-12 col-md-4" id="box">
+				
+				<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/item.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-			<div class="col-xs-12 col-md-4" id="box">
+				<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/tablet_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
 						</div>
 					</div>
 
-		<div class="col-xs-12 col-md-4" id="box">
+				<div class="col-xs-6 col-md-4" id="box">
 						<div id="item">
 							<img src="grafika/monitor_min.jpg" class="center-block img-responsive">
 							<h3>laptop hp323 intel</h3><p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -285,5 +350,6 @@
   	integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   	crossorigin="anonymous"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<srcipt src="jcart-1.3/index.php"></srcipt>
 </body>
 </html>

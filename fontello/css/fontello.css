@@ -65,7 +65,7 @@
 .icon-mobile:before { content: '\e807'; } /* '' */
 .icon-mail-1:before { content: '\e808'; } /* '' */
 .icon-search:before { content: '\e809'; } /* '' */
-.icon-connectdevelop:before { content: '\f20e'; font-size: 1.9em; padding-left: 0;} /* '' */
+.icon-connectdevelop:before { content: '\f20e'; font-size: 1.9em;} /* '' */
 .icon-cart-plus:before { content: '\f217'; } /* '' */
 .icon-cart-arrow-down:before { content: '\f218'; } /* '' */
 .icon-twitter-circled:before { content: '\f30a'; } /* '' */

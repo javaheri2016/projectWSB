@@ -1,0 +1,35 @@
+.rating {
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.rating input {
+   position: absolute;
+    left: -999999px;
+}
+
+label {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: transparent;
+}
+
+label::before {
+    content: '★'; 
+    color: gray;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: -100%;
+}
+
+label:hover:before, 
+label:hover ~label:before, 
+.rating input:checked  {
+    color: #d9534f;
+}

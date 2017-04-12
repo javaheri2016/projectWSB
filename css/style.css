@@ -19,7 +19,7 @@ body {
  }
 }
 .icon-connectdevelop {
-    color: #CA3B19;
+    color: #d9534f;
 }
 .carousel-caption {
 	/*color: #EBE5DF;*/
@@ -107,7 +107,7 @@ button a:hover, button a:visited, button a:active{
 	}
 #panel-title:hover {
 	background-color: #AEB0A6;
-	color: #CA3B19;
+	color: #d9534f;
 	}
 #panel-title a {
 	color: #353535;
@@ -116,7 +116,7 @@ button a:hover, button a:visited, button a:active{
 #panel-title a:hover {
 	width: auto;
 	text-decoration: none;
-	color: #CA3B19;
+	color: #d9534f;
 	background-color: #AEB0A6;
 	}
 #list-group-item, li#list-group-item a {
@@ -127,7 +127,7 @@ button a:hover, button a:visited, button a:active{
 	text-decoration: none;
 	}
 #list-group-item a:hover {
-	color: #CA3B19;
+	color: #d9534f;
     text-decoration: none;
 }	
 #dropdown {
@@ -153,7 +153,7 @@ button a:hover, button a:visited, button a:active{
 	}	
 	#dropdown-title:hover {
 		background-color: #AEB0A6;
-		color: #CA3B19;
+		color: #d9534f;
 		border-radius: 0;
 	}
 	#dropdown > ul {
@@ -165,7 +165,7 @@ button a:hover, button a:visited, button a:active{
 	}
 	#dropdown > ul >li a:hover {
 		background-color: #AEB0A6;
-		color: #CA3B19;
+		color: #d9534f;
     text-decoration: none;
 	}
 }
@@ -181,7 +181,7 @@ button a:hover, button a:visited, button a:active{
 	/*background: #DBDFCC;*/
 }
 .icon-basket   {
-    color: #CA3B19;
+    color: #d9534f;
     font-size: 1.7em;
 }
 
@@ -238,7 +238,7 @@ height: 150px;
 
 .widget-chat .slideout-widget-handler,
 .widget-chat .slideout-widget-content {
- background: #CA3B19;
+ background: #d9534f;
  border: none;
 }
  
@@ -246,6 +246,19 @@ height: 150px;
 .widget-chat a {
  color: #fff;
 }
+
+.btn-right {
+  position: absolute;
+right: 10px;
+    bottom: 5px;
+    display: block;
+}
+
+.img-item {
+    padding: 10px;
+    border-radius: 20px;
+}
+
 #footer {
 	background: #1D2120;
 	color: #EBE5DF;

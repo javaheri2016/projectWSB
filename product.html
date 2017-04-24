@@ -41,24 +41,23 @@ include_once('jcart/jcart.php');
                     <a class="navbar-brand" href="#"><i class="icon-connectdevelop"></i>pear</a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Strona główna <span class="sr-only">current</span></a></li>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Regulamin</a></li>
-                        <li><a href="#">Kontakt</a></li>
-
-                    </ul>
-                    <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="szukaj">
-                        </div>
-                        <button type="submit" class="btn btn-default"><i class="icon-search"></i></button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Koszyk <i style="font-size: 1.8em" class="icon-basket"></i></a></li>
-                    </ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Strona główna <span class="sr-only">current</span></a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Regulamin</a></li>
+            <li><a href="#">Kontakt</a></li>
+          <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="szukaj">
+          </div>
+          <button type="submit" class="btn btn-default"><i class="icon-search"></i></button>
+          </form>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Koszyk <i style="font-size: 1.8em" class="icon-basket"></i></a></li>
+        </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -67,123 +66,110 @@ include_once('jcart/jcart.php');
     </div>
 
 
+
     <!--menu boczne i zawartość strony-->
     <div class="container-fluid">
         <div class="row">
-            <!-- menu > 1024px -->
-            <div class="col-xs-12 col-md-3" id="nav">
-                <div class="panel-group" id="menu_harmonijka">
-                    <div class="panel panel-default" id="panel-heading">
-                        <div class="panel-heading" id="panel-heading">
-                            <h4 class="panel-title" id="panel-title">
-                                <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu1" aria-expanded="true" aria-controls="menu1">PearPC</a>
-                            </h4>
+    <!-- big menu-->
+            <div class="col-md-3" id="nav">
+                <div class="panel-group">
+                    <div class="panel panel-default heading">
+                        <div class="heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu1" aria-expanded="true" aria-controls="menu1">PearPC</a>
+                        </h4>
                         </div>
-                        <div class="panel-collapse collapse" id="menu1">
-                            <ul class="list-group">
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearPC</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearPC Air</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">Pear PC Pro</a></li>
-                            </ul>
-                        </div>
+                            <div class="panel-collapse collapse" id="menu1">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">PearPC</a></li>
+                                    <li class="list-group-item"><a href="#">PearPC Air</a></li>
+                                    <li class="list-group-item"><a href="#">Pear PC Pro</a></li>
+                                </ul>
+                            </div>
                     </div>
-                    <div class="panel panel-default" id="panel-heading">
-                        <div class="panel-heading" id="panel-heading">
-                            <h4 class="panel-title" id="panel-title">
-                                <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu2" aria-expanded="true" aria-controls="menu2">iPear</a>
-                            </h4>
+                    <div class="panel panel-default heading">
+                        <div class="heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu2" aria-expanded="true" aria-controls="menu2">iPear</a>
+                        </h4>
                         </div>
-                        <div class="panel-collapse collapse" id="menu2">
-                            <ul class="list-group">
-                                <li class="list-group-item" id="list-group-item"><a href="#">iPear Pro</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">iPear Air 2</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">iPear Mini 2</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">iPear Mini 4</a></li>
-                            </ul>
-                        </div>
+                            <div class="panel-collapse collapse" id="menu2">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">iPear Pro</a></li>
+                                    <li class="list-group-item"><a href="#">iPear Air 2</a></li>
+                                    <li class="list-group-item"><a href="#">iPear Mini 2</a></li>
+                                    <li class="list-group-item"><a href="#">iPear Mini 4</a></li>
+                                </ul>
+                            </div>
                     </div>
-                    <div class="panel panel-default" id="panel-heading">
-                        <div class="panel-heading" id="panel-heading">
-                            <h4 class="panel-title" id="panel-title">
-                                <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu3" aria-expanded="true" aria-controls="menu2">PearPhone</a>
-                            </h4>
+                    <div class="panel panel-default heading">
+                        <div class="heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu3" aria-expanded="true" aria-controls="menu2">PearPhone</a>
+                        </h4>
                         </div>
-                        <div class="panel-collapse collapse" id="menu3">
-                            <ul class="list-group">
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearPhone 7</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearPhone 6</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearPhone SE</a></li>
-                            </ul>
-                        </div>
+                            <div class="panel-collapse collapse" id="menu3">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">PearPhone 7</a></li>
+                                    <li class="list-group-item"><a href="#">PearPhone 6</a></li>
+                                    <li class="list-group-item"><a href="#">PearPhone SE</a></li>
+                                </ul>
+                            </div>
                     </div>
-                    <div class="panel panel-default" id="panel-heading">
-                        <div class="panel-heading" id="panel-heading">
-                            <h4 class="panel-title" id="panel-title">
-                                <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu4" aria-expanded="true" aria-controls="menu2">PearWatch</a>
-                            </h4>
+                    <div class="panel panel-default heading">
+                        <div class="heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#menu_harmonijka" href="#menu4" aria-expanded="true" aria-controls="menu2">PearWatch</a>
+                        </h4>
                         </div>
-                        <div class="panel-collapse collapse" id="menu4">
-                            <ul class="list-group">
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearWatch Series 2</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearWatch+</a></li>
-                                <li class="list-group-item" id="list-group-item"><a href="#">PearWatch ProEdition</a></li>
-                            </ul>
-                        </div>
+                            <div class="panel-collapse collapse" id="menu4">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">PearWatch Series 2</a></li>
+                                    <li class="list-group-item"><a href="#">PearWatch+</a></li>
+                                    <li class="list-group-item"><a href="#">PearWatch ProEdition</a></li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
-            <!--koniec menu > 1024px -->
-            <!--menu < 1024px -->
-            <div id="nav-mini">
-                <div class="dropdown" id="dropdown">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
-PearPC
-				<span class="caret"></span>
-			</button>
-                    <ul class="dropdown-menu">
+
+        <!--end of big menu -->
+        <!--menu small -->
+    
+        <div id="mini">
+            <ol>
+                <li><a href="#">PearWatch</a>
+                    <ul>
+                        <li><a href="#">PearWatch Series 2 </a></li>
+                        <li><a href="#">PearWatch+</a></li>
+                        <li><a href="#">PearWatch ProEdition</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PearPC</a>
+                    <ul>            
                         <li><a href="#">PearPC</a></li>
                         <li><a href="#">PearPC Air</a></li>
                         <li><a href="#">PearPC Pro</a></li>
                     </ul>
-                </div>
-                <div class="dropdown" id="dropdown">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
-				iPear
-				<span class="caret"></span>
-			</button>
-                    <ul class="dropdown-menu">
+                </li>
+                <li><a href="#">iPear</a>
+                    <ul>
                         <li><a href="#">iPear Pro</a></li>
                         <li><a href="#">iPear Air 2</a></li>
                         <li><a href="#">iPear Mini 2</a></li>
                         <li><a href="#">iPear Mini 4</a></li>
                     </ul>
-                </div>
-                <div class="dropdown" id="dropdown">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
-				PearPhone
-				<span class="caret"></span>
-			</button>
-                    <ul class="dropdown-menu">
+                </li>
+                <li><a href="#">PearPhone</a>
+                    <ul>
                         <li><a href="#">PearPhone 7</a></li>
                         <li><a href="#">PearPhone 6</a></li>
                         <li><a href="#">PearPhone SE</a></li>
                     </ul>
-                </div>
-                <div class="dropdown" id="dropdown">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
-				PearWatch
-				<span class="caret"></span>
-			</button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">PearWatch Series 2 </a></li>
-                        <li><a href="#">PearWatch+</a></li>
-                        <li><a href="#">PearWatch ProEdition</a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <!-- koniec menu < 1024px -->
+                </li>
+            </ol>
+        </div>  
+            <!-- end of small menu -->
             <div class="col-xs-12 col-md-9" id="product">
 
                 <div class="row">
@@ -313,9 +299,9 @@ PearPC
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12" id="footer">
+            <footer class="col-xs-12">
                 <i style="color:white; font-size: 0.5em" class="icon-connectdevelop"></i> Pear - najlepsza jakość dla wymagających <i style="color:white; font-size: 0.5em" class="icon-connectdevelop"></i>
-            </div>
+            </footer>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>

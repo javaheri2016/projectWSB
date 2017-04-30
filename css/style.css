@@ -60,34 +60,68 @@ body {
 .icon-connectdevelop {
     color: #d9534f;
 }
+/*carousel*/
 .carousel-caption {
-	/*color: #EBE5DF;*/
-	background: rgb(255,253,249);
-	opacity: .6;
+	padding-bottom: 15%;
 	border-radius: 8px;
-	color: rgb(53,62,63);
+	color: #F8F8F8;
 }
-button a {
+.btn-link a {
 	color: red;	
 }
-button a:hover, button a:visited, button a:active{
+.btn-link a:hover, .btn-link a:visited, .btn-link a:active{
 	color: rgb(53,62,63);
 	text-decoration: none;
 }
 #promo {
-	width: 40%;
-	margin-bottom: 8%;
-	margin-left: 10%;
-}
-#promo .icon-connectdevelop {
-	font-size: 1.5em; 
-	opacity:1; 
-	font-weight: bold
+	padding-bottom: 8%;
 }
 .carousel-caption h1{
 	color: red;
 }
-
+#promo h1 {
+	color: white;
+}
+@media (min-width:691px) and (max-width: 991px) {
+	h1{
+		font-size: 1.75em;
+	}
+	h3 {
+		font-size: 1em;	
+	}
+	.carousel-caption {
+		padding-bottom: 10%;
+	}
+}	
+@media (min-width: 550px) and (max-width: 691px) {
+	h1{
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: .75em;	
+	}
+	.carousel-caption {
+		padding-bottom: 5%;
+	}
+	#promo .icon-connectdevelop {
+		display: none;
+	}	
+}
+@media (max-width: 549px) {
+	h1{
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 1em;	
+	}
+	.carousel-caption {
+		padding-bottom: 1%;
+	}
+	#promo .icon-connectdevelop {
+		display: none;
+	}
+}
+/*end of carousel*/
 @media (max-width: 768px) {
     .navbar-collapse {
     color: #333;
@@ -95,7 +129,7 @@ button a:hover, button a:visited, button a:active{
     text-align: center;
 }
     
-     .form-control {
+    .form-control {
         max-width: 50%;
         text-align: center;
         display: inline;
@@ -103,24 +137,11 @@ button a:hover, button a:visited, button a:active{
     .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #333;
     background-color: #f8f8f8;   
-    
-}
-}
-
-@media (max-width: 640px) {
-	#timer h2, .carousel-caption h3 {
-		font-size: 1em;	
-		margin-top: 0;		
-	}
-	#promo .icon-connectdevelop {
-		display: none;, #promo h1
-	}
-	.carousel-caption h1 {
-		font-size: 1.5em;
 	}
 }
 #content {
-	background-color: #AEB0A6;
+	/*background-color: #AEB0A6;*/
+	background-color: rgb(214,215,210);
 }
 #content #box {
 	padding: 1%;
@@ -229,13 +250,13 @@ footer {
 	    top: 10%; 
 	}	
 	#nav .panel-group {
-		background: #999;
+		background: #AEB0A6;
 		text-align: center;
 		display: block;
 		} 
 	.heading {
-		background-color: #999;
-		border: 1px solid #999;
+		background-color: #AEB0A6;
+		border: 1px solid #AEB0A6;
 		}
 	.panel-title {
 		height: 50px;
@@ -338,3 +359,7 @@ footer {
     }
 }	
 /* end of nav */
+button a, button a:hover, button a:active, button a:visited {
+	color: white;
+	text-decoration: none;
+}

@@ -516,3 +516,30 @@ button a:visited {
 .row-regulations h4 {
     padding-top: 18px;
 }
+
+
+#map-container { 
+    height: 450px;
+    width: 90%;
+    border-radius: 20px;
+    
+}
+
+#map-space {
+    height: 100px;
+}
+    
+.photos {
+    text-align: center;
+    padding-top: 25px;
+    width: 90%;
+}
+
+.photos a {
+    color: black;
+}
+
+.photos a:hover {
+    color: #d9534f;
+    text-decoration: none;
+}

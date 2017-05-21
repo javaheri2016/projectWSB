@@ -8,7 +8,6 @@ body {
     font-family: 'Verdana';
 }
 
-
 /* main nav */
 
 .navbar {
@@ -80,151 +79,110 @@ body {
 
 
 /*carousel*/
-
 .carousel-caption {
     padding-bottom: 6%;
     border-radius: 20px;
     color: #333;
     background-color: rgba(255, 255, 255, 0.6);
+    margin: auto auto;
 }
 
 .btn-danger {
     margin-top: 5%;
-        padding: 1%;
+    padding: 1%;
     border-radius: 20px;
 }
-
 #promo {
-    margin: 0 auto 8% auto; 
-   /* width: 30%;
-    height: 50%;*/
+    margin: auto auto; 
     width: 500px;
-    height: 380px;
+    height: 280px;
 }
 #promo h1 {
     color: white;
 }
-/* RWD #promo */
-@media (min-width: 960px) and (max-width: 1164px) {
-    #promo {
-        margin: 0 auto;
+/*importnat*/
+@media (min-width: 769px) {
+    #for_xs {
+        display: none;
     }
 }
-@media (min-width: 861px) and (max-width: 959px) {
-    #promo {
+/*  */
+@media (min-width: 1112px) and (max-width: 1150px) {
+    #promo {        
         width: 400px;
-        height: 350px;
-        margin: 0 auto;
+        height: 20px;
+        padding-bottom: 220px;
     }
-    #promo h1 {
-        font-size: 2em;
-    }
-}
-@media (min-width: 821px) and (max-width: 860px) {
-    #promo {
-        width: 350px;
-        height: 330px;
-        margin: 0 auto;
-    }
-    .icon-big {
-        font-size: 1.2em;
-    }
-}
-@media (min-width: 629px) and (max-width: 820px) {
-    #promo {
-        width: 320px;
-        height: 250px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .icon-big {
-        display: none;        
-    }
-}
-@media (min-width: 585px) and (max-width: 628px) {
-    #promo {
-        margin: 0 auto;
-        width: 320px;
-        height: 230px;
-    }
-    .icon-big {
-        display: none;        
-    }
-    #promo h2 {
-        font-size: 1.5em;
-        color: #000;
-    }
-}
-@media (max-width: 584px) {
-    #promo {
-        margin-bottom: 15px;
-        width: 300px;
+    .carousel-caption {
+        width: 600px;
         height: 200px;
+        padding-bottom: 200px;
     }
-    .icon-big {
-        display: none;        
-    }
-    #promo h2 {
-        font-size: 1.5em;
-        color: #000;
-    }
-}   
-.carousel-caption h1 {
-    color: red;
-}
-.carousel-indicators li{
-    border: 1px solid #d9534f;
-}
-
-.carousel-indicators .active{
-    background-color: #d9534f;
-}
-@media (min-width:691px) and (max-width: 991px) {
     h1 {
         font-size: 1.75em;
     }
     h3 {
-        font-size: 1em;
-    }
-    .carousel-caption {
-        padding-bottom: 10%;
+        font-size: 1.5em;
     }
 }
-
-@media (min-width: 550px) and (max-width: 691px) {
+@media (min-width: 976px) and (max-width: 1112px) { 
+    #promo {
+        width: 400px;
+        height: 210px;
+    }
+    .carousel-caption {
+        width: 600px;
+        height: 190px;
+        padding-bottom: 200px;
+    }
+    h1 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 963px) and (max-width: 975px) { 
+    #promo {
+        width: 400px;
+        height: 200px;
+        padding-bottom: 200px;
+    }
+    .carousel-caption {
+        width: 600px;
+        height: 200px;
+        padding-bottom: 200px;
+    }
     h1 {
         font-size: 1.5em;
     }
     h3 {
-        font-size: .75em;
-    }
-    .carousel-caption {
-        padding-bottom: 5%;
-    }
-    #promo .icon-connectdevelop {
-        display: none;
+        font-size: 1.25em;
     }
 }
-
-@media (max-width: 549px) {
+@media (min-width:769px) and (max-width: 962px) { 
+    #promo {
+        width: 250px;
+        height: 190px;
+        padding: 0;
+    }
+    .carousel-caption {
+        width: 500px;
+        height: 200px;       
+    }
     h1 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     h3 {
-        font-size: 1em;
+        font-size: 1.25em;
     }
-    .carousel-caption {
-        padding-bottom: 1%;
-    }
-    #promo .icon-connectdevelop {
-        display: none;
+
+}
+@media (max-width: 768px) {
+    .carousel {
+        display: none;        
     }
 }
-
-
-/*end of carousel*/
-
 @media (max-width: 768px) {
     .navbar-collapse {
         color: #333;
@@ -244,7 +202,6 @@ body {
 }
 
 #content {
-    /*background-color: #AEB0A6;*/
     background-color: rgb(214, 215, 210);
     padding-bottom: 7%;
 }
@@ -255,7 +212,6 @@ body {
 
 #content #box #item {
     padding: 1%;
-    /*background: #DBDFCC;*/
 }
 
 .icon-basket {

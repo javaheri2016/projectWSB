@@ -19,6 +19,14 @@ body {
     background: #F8F8F8;
 }
 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #d9534f;
+    border-radius: 10px;
+    background: none;
+}
+
 @media (max-width: 1040px) {
     .navbar-header {
         float: none;
@@ -60,6 +68,7 @@ body {
 
 /* end of main nav*/
 
+
 @media (max-width: 700px) {
     .slideout-widget {
         display: none;
@@ -85,6 +94,10 @@ body {
     color: #333;
     background-color: rgba(255, 255, 255, 0.6);
     margin: auto auto;
+}
+
+.carousel-inner {
+    padding-bottom: 20px;
 }
 
 .btn-danger {
@@ -178,12 +191,17 @@ body {
     }
 
 }
+
+#content {
+    background-color: rgb(214, 215, 210);
+    padding-bottom: 7%;
+}
+
+
 @media (max-width: 768px) {
     .carousel {
         display: none;        
     }
-}
-@media (max-width: 768px) {
     .navbar-collapse {
         color: #333;
         background-color: #f8f8f8;
@@ -199,11 +217,9 @@ body {
         color: #333;
         background-color: #f8f8f8;
     }
-}
-
-#content {
-    background-color: rgb(214, 215, 210);
-    padding-bottom: 7%;
+    #content {
+        padding-bottom: 12px;
+    }
 }
 
 #content #box {
@@ -271,6 +287,7 @@ body {
 
 .description {
     text-align: justify;
+    line-height: 1.5em;
 }
 
 .progress-bar {
@@ -473,11 +490,20 @@ button a:visited {
     padding-top: 18px;
 }
 
+.row-regulations h4 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.row-regulations h4 a:hover {
+    color: #d9534f;
+}
 
 #map-container { 
     height: 450px;
     width: 90%;
     border-radius: 20px;
+    padding-top: 24px;
     
 }
 
@@ -499,3 +525,13 @@ button a:visited {
     color: #d9534f;
     text-decoration: none;
 }
+
+.photos h5 {
+    line-height: 1.5em;
+}
+
+.icon-white {
+    color:white; 
+    font-size: 0.8em;
+}
+

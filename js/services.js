@@ -7,9 +7,9 @@
     	let itemPear = [
     		{	
     			id: '1',
-    			name: 'PearWatch Series 2',
+    			name: 'PearWatch 2',
     			price: '1525zł',
-    			description: 'Najnoszy model w przystępnej cenie',
+    			description: 'Najnowszy model w dobrej cenie',
     			photo: './grafika/items/pearwatch1.png',
                 link: 'product1.html'
     				
@@ -25,9 +25,9 @@
     		},
     		{ 
     			id: '3',
-    			name: 'PearWatch ProEdition',
+    			name: 'PearWatch Pro',
     			price: '2585zł',
-    			description: 'Model, od którego możesz oczekiwać wszystkiego.',
+    			description: 'Możesz oczekiwać wszystkiego.',
     			photo: './grafika/items/pearwatch3.png'
     		},
     		{
@@ -41,14 +41,14 @@
     			id: '5',
     			name: 'PearPC Air',
     			price: '4525zł',
-    			description: 'Lekki, nowoczesny laptop z możliwościami komputera biurkowego',
+    			description: 'Lekki, nowoczesny laptop',
     			photo: './grafika/items/pearpc2.png'
     		},
     		{
     			id: '6',
     			name: 'PearPC Pro',
     			price: '12300zł',
-    			description: 'Komputer biurkowy, od którego możesz wymagać najbardziej zaawansowanych rzeczy.',
+    			description: 'Najbardziej zaawansowany',
     			photo: './grafika/items/pearpc3.png'
     		},
     		{ 

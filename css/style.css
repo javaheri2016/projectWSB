@@ -194,7 +194,7 @@ body {
 
 #content {
     background-color: rgb(214, 215, 210);
-    padding-bottom: 7%;
+    padding-bottom: 9%;
 }
 
 
@@ -218,7 +218,7 @@ body {
         background-color: #f8f8f8;
     }
     #content {
-        padding-bottom: 12px;
+        padding-bottom: 13%;
     }
 }
 
@@ -281,6 +281,10 @@ body {
     border-radius: 10px;
 }
 
+#product h2 {
+    padding: 10px;
+}
+
 .price {
     padding-bottom: 10px;
 }
@@ -325,10 +329,11 @@ body {
     background: #1D2120;
     color: #EBE5DF;
     font-size: 1.1em;
-    padding: 10px 0;
+    padding-top: 1%;
     text-align: center;
-    height: 7%;
+    height: 8%;
 }
+
 
 
 /* nav */

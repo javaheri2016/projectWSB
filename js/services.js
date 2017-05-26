@@ -17,7 +17,7 @@
     		},
     		{
     			id: '2',
-    			name: 'PearWatch+',
+    			name: 'PearWatch +',
     			price: '1715zł',
     			description: 'Wyższy model+ w najlepszej cenie',
     			photo: './grafika/items/pearwatch2.png',
@@ -25,9 +25,9 @@
     		},
     		{ 
     			id: '3',
-    			name: 'PearWatch Pro',
+    			name: 'PearWatch 3',
     			price: '2585zł',
-    			description: 'Możesz oczekiwać wszystkiego.',
+    			description: 'Możesz oczekiwać więcej',
     			photo: './grafika/items/pearwatch3.png'
     		},
     		{
@@ -55,7 +55,7 @@
     			id: '7',
     			name: 'iPear Pro',
     			price: '3585zł',
-    			description: 'Najlepszy model w swojej klasie',
+    			description: 'Najlepszy model w klasie',
     			photo: './grafika/items/ipear1.png'
     		},
     		{
@@ -69,7 +69,7 @@
     			id: '9',
     			name: 'iPear Air 2',
     			price: '2214zł',
-    			description: 'Lekki, wytrzymały, najlepszy',
+    			description: 'Lekki, wytrzymały, pro',
     			photo: './grafika/items/ipear2.png'
     		},
     		{ 

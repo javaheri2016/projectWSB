@@ -28,6 +28,12 @@ body {
 }
 
 @media (max-width: 1040px) {
+    .navbar-collapse {
+        color: #333;
+        background-color: #f8f8f8;
+        background: red;
+        text-align: center;
+    }
     .navbar-header {
         float: none;
     }
@@ -69,7 +75,7 @@ body {
 /* end of main nav*/
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .slideout-widget {
         display: none;
     }
@@ -189,7 +195,10 @@ body {
     h3 {
         font-size: 1.25em;
     }
-
+}
+#content {
+    background-color: rgb(214, 215, 210);
+    padding-bottom: 9%;
 }
 
 #content {
@@ -221,7 +230,6 @@ body {
         padding-bottom: 13%;
     }
 }
-
 #content #box {
     padding: 1%;
 }
@@ -334,8 +342,6 @@ body {
     height: 8%;
 }
 
-
-
 /* nav */
 
 @media (min-width: 992px) {
@@ -383,9 +389,14 @@ body {
         color: #d9534f;
         text-decoration: none;
     }
+    .heading input[type="text"] {
+        background: #AEB0A6;
+        border: 1px solid #AEB0A6;
+        border-bottom: 1px solid #F8F8F8;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.9px) {
     #nav {
         display: none;
     }
@@ -433,9 +444,13 @@ body {
         color: #d9534f;
         text-decoration: none;
     }
+    #mini input[type="text"] {
+        width: 80%;
+        background: #999;
+        border: 1px solid #999;
+        border-bottom: 1px solid #F8F8F8;
+    }
 }
-
-
 /* nav font-size */
 
 @media (max-width: 768px) {
@@ -449,94 +464,105 @@ body {
         height: 40px;
         width: 90px;
     }
-}
-
-@media (min-width: 769px) and (max-width: 991px) {
-    #mini ol {
-        height: 60px;
+    .icon-search {
+       font-size: 1em;
     }
-    #mini ol>li {
-        width: 150px;
-        padding: 15px 5px;
-    }
-    #mini ol>li a {
-        font-size: 1.4em;
+    #mini input[type="text"] {
+        width: 70%;
     }
 }
-
-
-/* end of nav */
-
-button a,
-button a:hover,
-button a:active,
-button a:visited {
-    color: white;
-    text-decoration: none;
+@media (max-width: 450px) {
+    #mini input[type="text"] {
+        width: 20%;
+    }
 }
+    @media (min-width: 769px) and (max-width: 991px) {
+        #mini ol {
+            height: 60px;
+        }
 
-.bottom-right {
-    margin-bottom: 40px;
-}
+            #mini ol > li {
+                width: 150px;
+                padding: 15px 5px;
+            }
 
-.header-photo {
-    width: 100%;
-    padding-bottom: 20px;
-}
+                #mini ol > li a {
+                    font-size: 1.4em;
+                }
+    }
 
-.row-regulations {
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-}
 
-.row-regulations h4 {
-    padding-top: 18px;
-}
+    /* end of nav */
 
-.row-regulations h4 a {
-    text-decoration: none;
-    color: #333;
-}
+    button a,
+    button a:hover,
+    button a:active,
+    button a:visited {
+        color: white;
+        text-decoration: none;
+    }
 
-.row-regulations h4 a:hover {
-    color: #d9534f;
-}
+    .bottom-right {
+        margin-bottom: 40px;
+    }
 
-#map-container { 
-    height: 450px;
-    width: 90%;
-    border-radius: 20px;
-    padding-top: 24px;
-    
-}
+    .header-photo {
+        width: 100%;
+        padding-bottom: 20px;
+    }
 
-#map-space {
-    height: 100px;
-}
-    
-.photos {
-    text-align: center;
-    padding-top: 25px;
-    width: 90%;
-}
+    .row-regulations {
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+    }
 
-.photos a {
-    color: black;
-}
+        .row-regulations h4 {
+            padding-top: 18px;
+        }
 
-.photos a:hover {
-    color: #d9534f;
-    text-decoration: none;
-}
+            .row-regulations h4 a {
+                text-decoration: none;
+                color: #333;
+            }
 
-.photos h5 {
-    line-height: 1.5em;
-}
+                .row-regulations h4 a:hover {
+                    color: #d9534f;
+                }
 
-.icon-white {
-    color:white; 
-    font-size: 0.8em;
-}
+    #map-container {
+        height: 450px;
+        width: 90%;
+        border-radius: 20px;
+        padding-top: 24px;
+    }
+
+    #map-space {
+        height: 100px;
+    }
+
+    .photos {
+        text-align: center;
+        padding-top: 25px;
+        width: 90%;
+    }
+
+        .photos a {
+            color: black;
+        }
+
+            .photos a:hover {
+                color: #d9534f;
+                text-decoration: none;
+            }
+
+        .photos h5 {
+            line-height: 1.5em;
+        }
+
+    .icon-white {
+        color: white;
+        font-size: 0.8em;
+    }
 

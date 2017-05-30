@@ -1,13 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-    <?php
-
-// If your page calls session_start() be sure to include jcart.php first
-include_once('jcart/jcart.php');
-
-?>
         <title>Pear - sklep dla wymagających</title>
         <meta charset="UTF-8">
         <meta name="author" content="Sandra Ilczuk sandra_i@poczta.onet.pl Katarzyna Javaheri-Szpak katarzyna.javaheri@gmail.com">
@@ -49,7 +43,7 @@ include_once('jcart/jcart.php');
                         <li><a href="kontakt.html">Kontakt</a></li>                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Koszyk <i style="font-size: 1.8em" class="icon-basket"></i></a></li>
+                        <li ><a href="#">Koszyk <i style="font-size: 1.8em" class="icon-basket"></i></a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -106,7 +100,6 @@ include_once('jcart/jcart.php');
                             <h3>Poznaj nas bliżej - wpadnij na kawę.</h3>
                             <a href="kontakt.html" class="btn btn-danger" role="button">kontakt z nami</a>
                         </figacaption>
-
                     </div>
 
                     <div class="item">
@@ -114,7 +107,7 @@ include_once('jcart/jcart.php');
                         <figacaption class="carousel-caption">
                             <h1>Ponadczasowa elegancja</h1>
                             <h3>Zawsze modne, zawsze najlepszej jakości.</h3>
-                            <a href="#" class="btn btn-danger" role="button">dowiedz się więcej</a>
+                            <a href="product.html" class="btn btn-danger" role="button">dowiedz się więcej</a>
                         </figacaption>
 
                     </div>
@@ -177,7 +170,7 @@ include_once('jcart/jcart.php');
                         </div>
                         <div class="panel-collapse collapse" id="menu2">
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="products-list.html5shiv">iPear Pro</a></li>
+                                <li class="list-group-item"><a href="products-list.html">iPear Pro</a></li>
                                 <li class="list-group-item"><a href="products-list.html">iPear Air 2</a></li>
                                 <li class="list-group-item"><a href="products-list.html">iPear Mini </a></li>
                             </ul>
@@ -195,8 +188,16 @@ include_once('jcart/jcart.php');
                                 <li class="list-group-item"><a href="products-list.html">PearPhone 6</a></li>
                                 <li class="list-group-item"><a href="products-list.html">PearPhone SE</a></li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
+                        <div class="panel panel-default heading" >
+                            <div class="heading" style="margin-bottom:15px;">
+                                <label for="search" class="panel-title">
+                                    <h5>szukaj</h5>
+                                </label>
+                                <input type="text" name="search" ng-model="search"><i class="icon-search"></i>
+                            </div>
+                        </div>
 
                 </div>
             </div>
@@ -208,39 +209,46 @@ include_once('jcart/jcart.php');
                 <ol>
                     <li><a href="#">PearWatch</a>
                         <ul>
-                            <li><a href="products-list.html5shiv">PearWatch 2 </a></li>
-                            <li><a href="products-list.html5shiv">PearWatch+</a></li>
-                            <li><a href="products-list.html5shiv">PearWatch 3</a></li>
+                            <li><a href="products-list.html">PearWatch 2 </a></li>
+                            <li><a href="products-list.html">PearWatch+</a></li>
+                            <li><a href="products-list.html">PearWatch 3</a></li>
                         </ul>
                     </li>
                     <li><a href="#">PearPC</a>
                         <ul>
-                            <li><a href="products-list.html5shiv">PearPC</a></li>
-                            <li><a href="products-list.html5shiv">PearPC Air</a></li>
-                            <li><a href="products-list.html5shiv">PearPC Pro</a></li>
+                            <li><a href="products-list.html">PearPC</a></li>
+                            <li><a href="products-list.html">PearPC Air</a></li>
+                            <li><a href="products-list.html">PearPC Pro</a></li>
                         </ul>
                     </li>
                     <li><a href="#">iPear</a>
                         <ul>
-                            <li><a href="products-list.html5shiv">iPear Pro</a></li>
-                            <li><a href="products-list.html5shiv">iPear Air 2</a></li>
-                            <li><a href="products-list.html5shiv">iPear Mini</a></li>
+                            <li><a href="products-list.html">iPear Pro</a></li>
+                            <li><a href="products-list.html">iPear Air 2</a></li>
+                            <li><a href="products-list.html">iPear Mini</a></li>
 
                         </ul>
                     </li>
                     <li><a href="#">PearPhone</a>
                         <ul>
-                            <li><a href="products-list.html5shiv">PearPhone 7</a></li>
-                            <li><a href="products-list.html5shiv">PearPhone 6</a></li>
-                            <li><a href="products-list.html5shiv">PearPhone SE</a></li>
+                            <li><a href="products-list.html">PearPhone 7</a></li>
+                            <li><a href="products-list.html">PearPhone 6</a></li>
+                            <li><a href="products-list.html">PearPhone SE</a></li>
                         </ul>
-                    </li>
+                    </li>   
+                    <li>
+                        <label for="search">
+                            <i class="icon-search"></i>
+                        </label>
+                                <input type="text" name="search" ng-model="search">
+                            
+                    </li>  
                 </ol>
             </div>
 
             <!-- end of small menu -->
 
-            <div class="col-xs-12 col-md-9" id="content">
+            <div class="col-xs-12 col-md-9" id="content" ng-cloak>
                 <div class="row">
                     <!--AngularJS-->
                     <div id="nowy" ng-controller="EmpCtrl">

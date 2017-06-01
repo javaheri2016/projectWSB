@@ -200,13 +200,6 @@ body {
     background-color: rgb(214, 215, 210);
     padding-bottom: 9%;
 }
-
-#content {
-    background-color: rgb(214, 215, 210);
-    padding-bottom: 9%;
-}
-
-
 @media (max-width: 768px) {
     .carousel {
         display: none;        
@@ -341,7 +334,6 @@ body {
     text-align: center;
     height: 8%;
 }
-
 /* nav */
 
 @media (min-width: 992px) {

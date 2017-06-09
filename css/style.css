@@ -35,7 +35,6 @@ body {
     .navbar-collapse {
         color: #333;
         background-color: #f8f8f8;
-        background: red;
         text-align: center;
     }
     .navbar-header {
@@ -79,7 +78,7 @@ body {
 /* end of main nav*/
 
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
     .slideout-widget {
         display: none;
     }
@@ -250,7 +249,7 @@ body {
     height: 150px;
 }
 
-.slideout-widget:hover {
+.slideout-widget:hover, .slideout-widget:target {
     left: 0;
 }
 
